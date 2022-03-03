@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/c93cbe2f6f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftSideBar">
+          <div class="pageTitle">
+            <svg class="float-left" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M10 12C10 10.9 10.9 10 12 10C13.1 10 14 10.9 14 12C14 13.1 13.1 14 12 14C10.9 14 10 13.1 10 12M7.8 17.7L6.3 16.3L7.8 14.8C7.3 14 7 13 7 12C7 11 7.3 10 7.8 9.3L6.3 7.8L7.8 6.3L9.2 7.8C10 7.3 11 7 12 7C13 7 14 7.3 14.8 7.8L16.3 6.3L17.7 7.7L16.2 9.2C16.7 10 17 11 17 12C17 13 16.7 14 16.2 14.8L17.7 16.3L16.3 17.7L14.8 16.2C14 16.7 13 17 12 17C11 17 10 16.7 9.3 16.2L7.8 17.7M12 9C10.3 9 9 10.3 9 12C9 13.7 10.3 15 12 15C13.7 15 15 13.7 15 12C15 10.3 13.7 9 12 9M20 2C21.1 2 22 2.9 22 4V20C22 21.1 21.1 22 20 22H19V23H15V22H9V23H5V22H4C2.9 22 2 21.1 2 20V4C2 2.9 2.9 2 4 2H20M20 20V4H4V20H20Z" />
+          </svg>
+            <p class="ml-7">Dashboard</p>
+          </div>
+
+
+          <div class="leftNav">
+            <li><span class="material-icons float-left">home</span>Home</li>
+              <li><span class="material-icons float-left">person_outline</span>Profile</li>
+              <li><span class="material-icons float-left">chat</span>Messages</li>
+              <li><span class="material-icons float-left">history</span>History</li>
+              <li><span class="material-icons float-left">task</span>Tasks</li>
+              <li><span class="material-icons float-left">groups</span>Communities</li>
+              <br>
+              <li><span class="material-icons float-left">settings</span>Settings</li>
+              <li><span class="material-icons float-left">support</span>Support</li>
+              <li><span class="material-icons float-left">lock</span>Privacy</li>
+          </div>
+        </div>
+        <div class="topBar">
+          <div class="nameSpot">
+
+            <img class="float-left h-12 w-12 rounded-full ring-2 ring-orange-200 mr-1 mt-1" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <p class="text-xs font-bold mt-1">Hi there,</p>
+            <p class="text-lg tracking-wider font-extrabold font-sans float-left">John Doe! (@joD)</p>
+          </div>
+          <div class="searchBar">
+
+            <div class="search">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i></button>
+                <input type="text" class="searchB rounded-full px-5" placeholder="">
+                
+                </div>
+
+
+          </div>
+          <div class="notifications" >
+            
+            <div class=" float-left px-2 space-x-4 "> <img class="inline-block h-4 w-4 "src="https://cdn-icons-png.flaticon.com/512/1827/1827422.png" alt="" srcset=""> <img class="inline-block h-8 w-8 rounded-full ring-2 ring-orange-100" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            </div>
+            <p class="float-left text-lg tracking-wider font-semibold">John Doe</p>
+            </div>
+        <div class="navButtons">
+
+              <button class="btn py-1 px-6  rounded-full shadow">
+                New
+              </button>
+              <button class="btn  py-1 px-6  rounded-full shadow">
+                Upload
+              </button>
+              <button class="btn py-1 px-6 rounded-full shadow">
+                Share
+              </button>
+
+
+
+          </div>
+        </div>
+        <div class="insideConatiner">
+          <div class="leftTitle">Your Projects</div>
+          <div class="rightTitle"><p">Announcements</p></div>
+          <div class="announcements shadow-md">
+            <p class="underline decoration-black-500 decoration-1 underline-offset-2">Maintenance</p>
+            <h6 class="text-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </h6>
+            <br>            
+            <p class="underline decoration-black-500 decoration-1 underline-offset-2">Community share day</p>
+            <h6 class="text-xs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  </h6>
+            <br>            
+            <p class="underline decoration-black-500 decoration-1 underline-offset-2">Updated privacy policy</p>
+            <h6 class="text-xs">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </h6>
+            <br>
+          </div>
+          <div class="rightLowerTitle"><p>Featured user</div>
+          <div class="trending shadow-md"> <img class="float-left mr-2 h-10 w-10 rounded-full ring-2 ring-orange-300" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt=""> 
+            <p>@tegan</p>
+            <br>
+            <h6 class="text-xs">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested!</h6>
+           </div>
+          <div class="cards card1 shadow-md">
+            <p class="underline decoration-blue-500 decoration-1 underline-offset-2">Cool project</p>
+          <h4 class="text-sm">Fusce facilisis mauris sed nulla cursus, ac semper dolor tempor. Vivamus consequat convallis scelerisque. Donec volutpat, ex volutpat tempor imperdiet, nulla ex tempor ipsum, eget venenatis ligula velit id lectus. Aenean pulvinar fringilla pellentesque. </h4>
+          </div>
+          <div class="cards card2 shadow-md"><p class="underline decoration-blue-500 decoration-1 underline-offset-2">Super cool project</p>
+            <h4 class="text-sm">Fusce facilisis mauris sed nulla cursus, ac semper dolor tempor. Vivamus consequat convallis scelerisque. Donec volutpat, ex volutpat tempor imperdiet, nulla ex tempor ipsum, eget venenatis ligula velit id lectus. Aenean pulvinar fringilla pellentesque. </h4>
+          </div>
+          <div class="cards card3 shadow-md"><p class="underline decoration-blue-500 decoration-1 underline-offset-2">coolest project</p>
+            <h4 class="text-sm">Fusce facilisis mauris sed nulla cursus, ac semper dolor tempor. Vivamus consequat convallis scelerisque. Donec volutpat, ex volutpat tempor imperdiet. </h4>
+          </div>
+          <div class="cards card4 shadow-md"><p class="underline decoration-blue-500 decoration-1 underline-offset-2">boring project</p>
+            <h4 class="text-sm">Fusce facilisis mauris sed nulla cursus, ac semper dolor tempor. Vivamus consequat convallis scelerisque. Donec volutpat, ex volutpat tempor imperdiet, nulla ex tempor ipsum, eget venenatis ligula velit id lectus. Aenean pulvinar fringilla pellentesque. </h4>
+          </div>
+          <div class="cards card5 shadow-md"><p class="underline decoration-blue-500 decoration-1 underline-offset-2">boring project</p>
+            <h4 class="text-sm">Fusce facilisis mauris sed nulla cursus, ac semper dolor tempor.  </h4>
+          </div>
+          <div class="cards card6 shadow-md"><p class="underline decoration-blue-500 decoration-1 underline-offset-2">boring project</p>
+            <h4 class="text-sm">Fusce facilisis mauris sed nulla cursus, ac semper dolor tempor. Vivamus consequat convallis scelerisque.  </h4>
+          </div>
+        </div>
+      </div>
+      <script src="/script.js"></script>
+     
+</body>
+</html>

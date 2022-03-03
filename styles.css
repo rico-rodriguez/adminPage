@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+
+.container {  
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr  1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 1.3fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "leftSideBar  topBar topBar topBar topBar topBar"
+      "leftSideBar  topBar topBar topBar topBar topBar"
+      "leftSideBar  insideConatiner insideConatiner insideConatiner insideConatiner insideConatiner"
+      "leftSideBar  insideConatiner insideConatiner insideConatiner insideConatiner insideConatiner"
+      "leftSideBar  insideConatiner insideConatiner insideConatiner insideConatiner insideConatiner"
+      "leftSideBar  insideConatiner insideConatiner insideConatiner insideConatiner insideConatiner"
+      "leftSideBar  insideConatiner insideConatiner insideConatiner insideConatiner insideConatiner"
+      "leftSideBar  insideConatiner insideConatiner insideConatiner insideConatiner insideConatiner";
+      margin: auto;
+  }
+  
+  .leftSideBar {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pageTitle"
+      "leftNav";
+    grid-area: leftSideBar;
+    line-height: 2rem;
+  }
+  
+  .pageTitle {     
+    color: #fff;
+    background-color: #1992d4 ;  
+    grid-area: pageTitle; 
+    padding: 10px;
+
+  }
+  
+  .leftNav {     
+    color: #fff;
+    background-color: #1992d4 ;  
+    grid-area: leftNav; 
+    padding: 10px;
+    font-weight: 700;
+
+  }
+  
+  .topBar {  
+    display: grid;
+    grid-template-columns: 2fr .5 1fr;
+    grid-template-rows: .5fr .5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "searchBar . notifications"
+      "nameSpot navButtons navButtons";
+    grid-area: topBar;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.116); 
+    background-color: #ffffff ;   
+    z-index: 2;
+    position: relative;
+  }
+  
+  .nameSpot {     
+    background-color: #ffffff ;  
+    grid-area: nameSpot; 
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .searchBar {     
+    background-color: #ffffff ;  
+    grid-area: searchBar; 
+  }
+    
+  .search {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  input.searchB {
+    background-color: #e2e8f0;
+    width: 80%;
+
+}
+  
+  .notifications {     
+    background-color:#ffffff ;  
+    grid-area: notifications; 
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+  
+  .navButtons {     
+    grid-area: navButtons; 
+    position: absolute;
+    top: 20%;
+    left: 30%;
+  }
+  
+  .insideConatiner {  
+    background-color: #e2e8f0;  
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr ;
+    grid-template-rows: 0.2fr 6fr 6fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "leftTitle      .        rightTitle        "
+      "card1          card2    announcements     "
+      "card3          card4    announcements     "
+      "card5          card6    announcements     "
+      "card5          card6    rightLowerTitle   "
+      "card5          card6    trending          "
+      "card5          card6    trending          "
+      "card5          card6    trending          ";
+    grid-area: insideConatiner;
+    box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.116);  
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .leftTitle {     
+    grid-area: leftTitle; 
+}
+  
+  .rightTitle {     
+    grid-area: rightTitle; 
+}
+  
+  .announcements {     
+    background-color: #ffffff;  
+    grid-area: announcements; 
+    border-radius: 5px;
+    padding: 15px;
+}
+  
+  .trending {     
+    background-color: #ffffff;  
+    grid-area: trending;
+    border-radius: 5px; 
+    padding: 15px;
+}
+  
+  .rightLowerTitle {    
+    grid-area: rightLowerTitle; 
+}
+  
+  .card1 { 
+    grid-area: card1; 
+    
+}
+  
+  .card2 {     
+    grid-area: card2; 
+
+}
+  
+  .card3 {     
+    grid-area: card3; 
+
+}
+  
+.card4 {     
+  grid-area: card4; 
+}  
+
+.card5 {     
+  grid-area: card5; 
+}
+
+.card6 {     
+  grid-area: card6; 
+}
+
+.cards {
+    border-left: 8px solid rgb(240, 184, 0);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.btn {
+    background-color: #1992d4;
+    color: #fff;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.material-icons {
+  margin-right: 20px;
+
+  
+}
